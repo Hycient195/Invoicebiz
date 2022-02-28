@@ -3,23 +3,23 @@ import './App.css';
 import LeftNav from './'
 import SignIn from './pages/signIn/SignIn';
 import Home from './pages/home/Home';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Navbar from './components/navBar/Navbar';
+import Footer from './components/footer/Footer';
+import Dashboard from './pages/dashboard/Dashboard';
 
 function App() {
   return (
     <div className="App">
-      {/* <Router>
-        <Routes>
-          <Route path="/"> */}
-            <Home/>
-          {/* </Route>
-          <Route path="/sign-in">
-            <SignIn/>
-          </Route>
-        </Routes>
-      </Router> */}
-     
-      
+     <BrowserRouter>
+     <Navbar/>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/sign_in" element={<SignIn/>}/>
+        <Route path="/dashboard" element={<Dashboard/>}/>
+      </Routes>
+      <Footer/>
+     </BrowserRouter>  
     </div>
   );
 }
