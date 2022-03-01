@@ -29,8 +29,8 @@ export default function LeftSection(){
   return(
     <aside className="left-section">
     <div className="main-menu">
-      <div className="line"></div>
-      <button>Main Menu</button>
+      <div className="line"><button>Main Menu</button></div>
+      
     </div>
 
     <div className="left-section-body">
@@ -76,6 +76,8 @@ export default function LeftSection(){
         <p>Get Help</p>
       </div>
     </div>
+
+    
   </aside>
   )
 }

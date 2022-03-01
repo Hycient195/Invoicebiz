@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './components/navBar/Navbar';
 import Footer from './components/footer/Footer';
 import Dashboard from './pages/dashboard/Dashboard';
+import "@fontsource/poppins"; 
 
 function App() {
   return (

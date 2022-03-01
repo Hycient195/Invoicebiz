@@ -12,8 +12,8 @@ div.chart-board > .chart-board-item{
   background-color: #FFFFFF;;
   display: grid;
   grid-template-rows: 1fr 2fr;
-  padding: 5%;
-  /* gap: 1em; */
+  padding: 6%;
+  gap: 0.5em;
 }
 
 .chart-board-item > .title{
