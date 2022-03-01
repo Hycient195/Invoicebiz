@@ -1,5 +1,6 @@
 import './Home.css';
-import { Button } from '@material-ui/core';
+// import { Button } from '@material-ui/core';
+// import { ButtonUnstyled } from '@mui/core'
 import LaptopImg from '../../assets/laptop.svg';
 import TabletImg from '../../assets/tablet.svg';
 import Testimonial_1 from '../../assets/testimonial-1.png';
@@ -25,8 +26,8 @@ export default function Home(){
             Connect with our seamless invoicing platform with a unified system
             that helps you pitch your business to clients all over the world.
           </p>
-          <Button color="secondary" variant="contained">Start using Invoicebiz free</Button>
-          <Button color="primary" variant="text">Take a tour</Button>
+          <button >Start using Invoicebiz free</button>
+          <button >Take a tour</button>
         </div>
         <div className="image-section">
           {/* <LaptopImg/> */}

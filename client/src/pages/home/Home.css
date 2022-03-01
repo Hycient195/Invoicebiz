@@ -21,6 +21,22 @@ div.text-section{
 
 }
 
+div.text-section > button{
+  border: none;
+  margin: 0 1em;
+  padding: 0.7em 2em;
+}
+
+div.text-section > button:nth-of-type(1){
+  background: #EF387A;
+  color: white
+}
+
+div.text-section > button:nth-of-type(2){
+  background: whitesmoke;
+  color: #341E9D
+}
+
 /* div.text-section > p{
   font;
 } */
