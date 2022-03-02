@@ -1,6 +1,5 @@
 import './Navbar.css';
 import { Link, useLocation } from 'react-router-dom';
-import { Button, } from '@material-ui/core';
 
 const routeseWithoutSidebar = ["/dashboard", "/sign_in"];
 
@@ -8,7 +7,7 @@ export default function Navbar(){
   const { pathname } = useLocation();
 
   if(routeseWithoutSidebar.some(route => pathname.includes(route))) return null
-  
+
   return(
     <header>
       <nav className="navbar-nav">
