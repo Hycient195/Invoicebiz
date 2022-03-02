@@ -130,6 +130,18 @@ export default function TransactionList(){
           <p className="amount">$2, 280.00</p>
           <p className="status">Sent</p>
         </li>
+
+        {/* <li className="transaction">
+          <div className="client-name">
+            <h4 className="name shed-margin-padding">The last Consulting PLC.</h4>
+            <p className="invoice-number shed-margin-padding">Invoice No RCG - 332</p>
+          </div>
+
+          <p className="issue-date">1 hr ago</p>
+          <p className="due-date">Wed, 11th Feb, 2022</p>
+          <p className="amount">$2, 280.00</p>
+          <p className="status">Sent</p>
+        </li> */}
       </ul>
     </div>
   )

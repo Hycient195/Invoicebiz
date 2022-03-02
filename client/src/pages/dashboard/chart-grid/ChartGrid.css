@@ -12,8 +12,8 @@ div.chart-board > .chart-board-item{
   background-color: #FFFFFF;;
   display: grid;
   grid-template-rows: 1fr 2fr;
-  padding: 6%;
-  gap: 0.5em;
+  padding: 1em;
+  gap: 1em;
 }
 
 .chart-board-item > .title{
@@ -57,15 +57,18 @@ div.chart-board > .chart-board-item{
   grid-template-rows: 1.5fr 1fr;
   justify-items: left;
   align-items: center;
+  gap: 0.5em;
 }
 
 .description > .amount > .price{
   font-weight: normal;
   font-size: 1.9em;
+  margin-left: 4%;
 }
 
 .description > .amount > .rate{
   font-weight: normal;
   color: grey;
   font-size: 0.9em;
+  margin-left: 4%;
 }

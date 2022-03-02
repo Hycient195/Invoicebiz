@@ -1,11 +1,13 @@
 import './ChartGrid.css';
+import barWithArror from '../../../assets/bar-with-arrow.png';
+
 
 export default function ChartGrid(){
   return(
     <div className="chart-board">
       <div className="chart-board-item">
         <div className="title">
-          <div className="icon">icon</div>
+          <div className="icon"><img src={barWithArror} alt=""/></div>
           <p className="title-text">Overdue Amount</p>
           <p className="date">Today</p>
         </div>
@@ -22,7 +24,7 @@ export default function ChartGrid(){
 
       <div className="chart-board-item">
         <div className="title">
-          <div className="icon">icon</div>
+          <div className="icon"><img src={barWithArror} alt=""/></div>
           <p className="title-text">Overdue Amount</p>
           <p className="date">Today</p>
         </div>
@@ -39,7 +41,7 @@ export default function ChartGrid(){
 
       <div className="chart-board-item">
         <div className="title">
-          <div className="icon">icon</div>
+          <div className="icon"><img src={barWithArror} alt=""/></div>
           <p className="title-text">Overdue Amount</p>
           <p className="date">Today</p>
         </div>
@@ -56,7 +58,7 @@ export default function ChartGrid(){
 
       <div className="chart-board-item">
         <div className="title">
-          <div className="icon">icon</div>
+          <div className="icon"><img src={barWithArror} alt=""/></div>
           <p className="title-text">Overdue Amount</p>
           <p className="date">Today</p>
         </div>

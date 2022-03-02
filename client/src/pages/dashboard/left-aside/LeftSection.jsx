@@ -1,4 +1,11 @@
 import { useState } from 'react';
+import  businessIcon  from '../../../assets/business-icon.svg';
+import  dashboardIcon  from '../../../assets/dashboard-icon.svg';
+import  documentIcon  from '../../../assets/document-icon.svg';
+import  feedbackIcon  from '../../../assets/feedback-icon.svg';
+import  invoicesIcon  from '../../../assets/invoices-icon.svg';
+import  privacyIcon  from '../../../assets/privacy-icon.svg';
+// import    from '../../../assets .svg';
 import './LeftSection.css';
 
 export default function LeftSection(){
@@ -35,45 +42,45 @@ export default function LeftSection(){
 
     <div className="left-section-body">
       <div className="section-item">
-        Dashboard
+      <img src={dashboardIcon} alt=""/> Dashboard
       </div>
       <div onClick={showDropDown} className="section-item">
-        Business
+        <img src={businessIcon} alt=""/> Business
         {
           dropDown && dropDown.Business
         }
       </div>
       <div onClick={showDropDown} className="section-item">
-        Document
+      <img src={documentIcon} alt=""/> Document
         {
           dropDown && dropDown.Document
         }
       </div>
       <div onClick={showDropDown} className="section-item">
-        Invoices
+      <img src={invoicesIcon} alt=""/> Invoices
         {
           dropDown && dropDown.Invoices
         }
       </div>
       <hr/>
       <div onClick={showDropDown} className="section-item">
-        Privacy
+      <img src={privacyIcon} alt=""/> Privacy
         {
           dropDown && dropDown.Privacy
         }
       </div>
       <div onClick={showDropDown} className="section-item">
-        Terms
+      Terms
         {
           dropDown && dropDown.Terms
         }
       </div>
       <hr/>
       <div className="section-item">
-        <p>Send Feedback</p>
+      <img src={feedbackIcon} alt=""/>Send Feedback
       </div>
       <div className="section-item">  
-        <p>Get Help</p>
+      <p>Get Help</p>
       </div>
     </div>
 

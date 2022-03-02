@@ -1,4 +1,4 @@
-import LeftNav from '../../components/neftNav/LeftNav';
+import LeftNav from '../../components/leftNav/LeftNav';
 import './signIn.css'
 import { Input, TextField, Button } from '@material-ui/core'
 
