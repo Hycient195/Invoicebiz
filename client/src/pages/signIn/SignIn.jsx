@@ -1,6 +1,7 @@
 import LeftNav from '../../components/leftNav/LeftNav';
 import './signIn.css'
-import { Input, TextField, Button } from '@material-ui/core'
+// import { Input, TextField, Button } from '@material-ui/core'
+import { Button, TextField } from '@mui/material'
 
 export default function SignIn (){
   return(
