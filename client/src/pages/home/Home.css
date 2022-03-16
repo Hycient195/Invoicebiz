@@ -250,15 +250,18 @@ section.download-section{
   }
 
   div.image-section{
-    /* padding: 2em; */
-    /* background-color: white; */
-    /* height: 500px; */
+    width: 100%;
+    text-align: center;
+    /* background-color: red; */
   }
 
   .image-section > .laptop-img{
-    left: -5% !important;
+    position: unset !important;
+    margin: 0 auto !important;
+    /* background-color: tomato; */
+    /* left: 58% !important; */
     width: 85%;
-    margin-bottom: 3em;
+    /* margin-bottom: 3em; */
     /* background-color: whitesmoke; */
     /* height: 300px !important; */
   }
