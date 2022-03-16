@@ -84,11 +84,41 @@ nav > ul > li > .sign-in{
 }
 
 nav > ul > li > button.sign-up{
-  padding: 0.8em 1.5em;
+  padding: 0.8em 1em;
   border: none;
   color: white;
   background: #EF387A;
   border-radius: 3px;
   font-size: 0.9em;
   margin: 0px;
+}
+
+nav .sign-in-mobile{
+  display: none;
+}
+
+
+@media (max-width: 780px){
+  nav > ul{
+    display: none;
+  }
+
+  header > nav.navbar-nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.5em;
+  }
+
+  nav .sign-in-mobile{
+    display: unset;
+    padding: 0.7em 1.5em;
+    color: white;
+    background: #EF387A;
+    border: none;
+    border-radius: 3px;
+    height: fit-content;
+    font-size: 0.9em;
+    align-self: center;
+    text-decoration: none;
+  }
 }

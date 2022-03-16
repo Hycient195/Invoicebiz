@@ -1,7 +1,7 @@
 import './Home.css';
 // import { Button } from '@material-ui/core';
 // import { ButtonUnstyled } from '@mui/core'
-import LaptopImg from '../../assets/laptop.svg';
+import LaptopImg from '../../assets/laptop.png';
 import TabletImg from '../../assets/tablet.svg';
 import Testimonial_1 from '../../assets/testimonial-1.png';
 import Testimonial_2 from '../../assets/testimonial-2.png';
@@ -18,10 +18,8 @@ export default function Home(){
     <main className="home-container">
       <div className="hero-header">
         <div className="text-section">
-          <h2>Your Business. Your Clients</h2>
-          {/* <br/> */}
-          <h2>One Free, Powerful Invoicing Platform</h2>
-          {/* <br/> */}
+          <h2>Your Business. Your Clients <br/> One Free, Powerful Invoicing Platform</h2>
+ 
           <p>
             Connect with our seamless invoicing platform with a unified system
             that helps you pitch your business to clients all over the world.
@@ -35,16 +33,18 @@ export default function Home(){
             <img className="laptop-img" src={LaptopImg} alt=""/>
           {/* </div> */}
           {/* <div className="tablet-img-container"> */}
-            <img className="tablet-img" src={TabletImg} alt=""/>
+            {/* <img className="tablet-img" src={TabletImg} alt=""/> */}
           {/* </div>  */}
         </div>
       </div>
 
       <section className="get-started">
         <p>Send your first invoice today - it's free!</p>
-        <input type="text" placeholder="Your email address"/>
-        <input type="text" placeholder="Your first name"/>
-        <button>Get Started</button>
+        {/* <div className="get-started-container"> */}
+          <input type="text" placeholder="Email address"/>
+          <input type="text" placeholder="First name"/>
+          <button>Get Started</button>
+        {/* </div> */}
       </section>
 
 

@@ -18,6 +18,7 @@ export default function TransactionList(){
           <p className="amount">Amount</p>
           <p className="status">Status</p>
         </li>
+        {/* <hr/> */}
       </ul>
 
       <ul className="transactions">

@@ -1,7 +1,8 @@
 import LeftNav from '../../components/leftNav/LeftNav';
 import './signIn.css'
 // import { Input, TextField, Button } from '@material-ui/core'
-import { Button, TextField } from '@mui/material'
+import { Button, TextField } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 export default function SignIn (){
   return(
@@ -23,7 +24,7 @@ export default function SignIn (){
             <TextField type="password" className="text-field" fullWidth variant="outlined"/>
           </div>
 
-          <Button class="sign-in-button" color="primary" variant="contained" type="submit" value="Submit">Submit</Button>
+          <Link to="/dashboard" class="sign-in-button" color="primary" variant="contained" type="submit" value="Submit">Submit</Link>
         </form>
 
         <div className="separator">

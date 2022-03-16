@@ -20,6 +20,7 @@ export default function Navbar(){
           <li><Link to="/sign_in" className="sign-in">Sign in</Link></li>
           <li><button className="sign-up">Sign up free</button></li>
         </ul>
+        <Link to="/sign_in" className="sign-in-mobile">Sign in</Link>
       </nav>
     </header>
     
