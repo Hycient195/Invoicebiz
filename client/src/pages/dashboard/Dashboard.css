@@ -51,10 +51,11 @@
 /*===========================*/
 main.main-body{
   width: 100%;
+  /* height: 100vh; */
   display: grid;
   grid-template-columns: 270px 3fr 1fr;
   background: #F7F9FF;
-  position: fixed;
+  /* position: fixed; */
 }
 
 
