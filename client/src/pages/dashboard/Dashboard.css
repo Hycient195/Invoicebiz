@@ -55,7 +55,7 @@ main.main-body{
   display: grid;
   grid-template-columns: 270px 3fr 1fr;
   background: #F7F9FF;
-  /* position: fixed; */
+  position: fixed;
 }
 
 
@@ -66,9 +66,15 @@ div.center-section{
   padding: 1em 2em 2em 2em;
   display: grid !important;
   height: 95vh;
+  overflow-y: scroll;
 }
 /* End of Center section */
 
+
+aside.right-section{
+  overflow-y: scroll;
+  height: 90vh;
+}
 
 
 
