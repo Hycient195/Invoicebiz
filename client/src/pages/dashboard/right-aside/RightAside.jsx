@@ -1,32 +1,17 @@
 import { useState } from 'react';
+// import downArrow from '../../../assets/down-arrow.png';
+import FeedItem from '../../../components/FeedItem/FeedItem';
+import Feed from '../../../constants/feed';
 import './RightAside.css';
 
 export default function RightAside(){
-  const [ feedContent, setFeedContent ] = useState();
-  const [ feedContentState, setFeedContentState ] = useState(false);
-
-  const showFeedContent = (e) =>{
-    if(feedContentState == false){
-      setFeedContent(
-        <div className="feed-content">
-          <div className="icon">icon</div>
-          <div className="text">
-            Do you want to work on a state-of-the-art platform
-            used across many industries to solve challenging 
-            technical and architecture problems?
-          </div>
-        </div>
-      )
-      setFeedContentState(true)
-    }
-    else{
-      setFeedContent('')
-      setFeedContentState(false)
-    }
-  }
 
   return(
     <div className="right-aside-container">
+      
+      {/*==============*/}
+      {/* Profile Card */}
+      {/*==============*/}
       <div className="right-aside-top">
         <div className="top">
           <div className="left">
@@ -48,35 +33,36 @@ export default function RightAside(){
           </div>
         </div>
       </div>
-      {/*------------- End Of Right Section Top -----------------*/}
+      {/* End Of Profile Card */}
 
-      {/*======== Begining Of Righto Section Bottom =======*/}
+
+
+      {/*============================*/}
+      {/* Beginning of Feeds Section */}
+      {/*============================*/}
       <div className="right-aside-bottom">
         <div className="title">
           <h3 className="shed-margin-padding not-bold">Feed</h3>
           <p className="shed-margin-padding">Month</p>
         </div>
         <ul className="feed-list">
-          <li onClick={showFeedContent}>
-            <h3 className="shed-margin-padding title not-bold">New client <span>icon</span> </h3>
-            <p className="shed-margin-padding time">1 Hour Ago</p>
-            { feedContent && feedContent}
-          </li>
 
-          <li onClick={showFeedContent}>
-            <h3 className="shed-margin-padding title not-bold">Business added sucessfully <span>icon</span> </h3>
-            <p className="shed-margin-padding time">1 Hour Ago</p>
-            { feedContent && feedContent}
-          </li>
-
-          <li onClick={showFeedContent}>
-            <h3 className="shed-margin-padding title not-bold">Invoice sent <span>icon</span> </h3>
-            <p className="shed-margin-padding time">1 Hour Ago</p>
-            { feedContent && feedContent}
-          </li>
+          {
+            Feed.map((each, index)=>{
+              return(
+                <FeedItem
+                  key={index}
+                  title={each.title}
+                  time={each.time}
+                  feedContent={each.content}
+                />
+              )
+            })
+          }
         </ul>
         <div className="line"></div>
       </div>
+      {/* End of Feeds Section */}
     </div>
   )
 }

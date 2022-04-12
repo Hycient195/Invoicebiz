@@ -2,13 +2,11 @@ div.chart-board{
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1em;
-  /* height: 200px; */
 }
 
 div.chart-board > .chart-board-item{
   width: 100%;
   border-radius: 10px;
-  /* height: 150px; */
   background-color: #FFFFFF;;
   display: grid;
   grid-template-rows: 1fr 2fr;

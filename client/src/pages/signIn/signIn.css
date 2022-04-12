@@ -1,6 +1,3 @@
-*:not(div.left-nav-container){
-  /* border: 1px solid black; */
-}
 
 div.sign-in-container{
   display: flex;
@@ -21,7 +18,6 @@ div.sign-in-container{
 
 div.form-container{
   display: inline-block;
-  /* background: red; */
   width: 60%;
   padding: 0px 2em;
   max-width: 600px;
@@ -43,7 +39,6 @@ div.form-container{
 
 .text-field > div > input[type="text"],.text-field > div > input[type="password"]{
   height: 0.1em !important;
-  /* background: green; */
 }
 
 .sign-in-button{
@@ -57,7 +52,6 @@ div.form-container{
   font-family: sans-serif;
   float: right;
   text-decoration: none;
-  /* background: green !important; */
 }
 
 div.separator{
@@ -73,6 +67,10 @@ div.separator{
   text-align: center;
 }
 
+
+/*======================================*/
+/* Media Query For Large Tablet Devices */
+/*======================================*/
 @media only screen and (max-width: 950px){
   .left-nav-container{
     display: none !important;

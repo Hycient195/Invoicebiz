@@ -1,9 +1,13 @@
 import './TransactionList.css';
+import TransactionItem from '../../../components/TransactionItem/TransactionItem';
 
 export default function TransactionList(){
   return(
     <div className="transaction-list">
-      {/*======= Table Head ========*/}
+
+      {/*============*/}
+      {/* Table Head */}
+      {/*============*/}
       <div className="sort-section">
         <button>Most recent invoices</button>
         <button>Last Client</button>
@@ -18,131 +22,78 @@ export default function TransactionList(){
           <p className="amount">Amount</p>
           <p className="status">Status</p>
         </li>
-        {/* <hr/> */}
+        <hr className='divider'/>
       </ul>
 
+
+
+      {/*===============*/}
+      {/* Table Details */}
+      {/*===============*/}
       <ul className="transactions">
 
-        {/*======= Table Details ======*/}
-        <li className="transaction">
-          <div className="client-name">
-            <h4 className="name shed-margin-padding">Nadia Consulting PLC.</h4>
-            <p className="invoice-number shed-margin-padding">Invoice No RCG - 332</p>
-          </div>
+        <TransactionItem
+          name="Nadia Consulting PLC."
+          invoiceNo="Invoice No RCG - 332"
+          issueDate="1 hr ago"
+          dueDate="Wed, 11th Feb, 2022"
+          amount="2, 280.00"
+          status="Sent"
+        />
 
-          <p className="issue-date">1 hr ago</p>
-          <p className="due-date">Wed, 11th Feb, 2022</p>
-          <p className="amount">$2, 280.00</p>
-          <p className="status">Sent</p>
-        </li>
+        <TransactionItem
+          name="Nadia Consulting PLC."
+          invoiceNo="Invoice No RCG - 332"
+          issueDate="1 hr ago"
+          dueDate="Wed, 11th Feb, 2022"
+          amount="2, 280.00"
+          status="Sent"
+        />
 
-        <li className="transaction">
-          <div className="client-name">
-            <h4 className="name shed-margin-padding">Nadia Consulting PLC.</h4>
-            <p className="invoice-number shed-margin-padding">Invoice No RCG - 332</p>
-          </div>
+        <TransactionItem
+          name="Nadia Consulting PLC."
+          invoiceNo="Invoice No RCG - 332"
+          issueDate="1 hr ago"
+          dueDate="Wed, 11th Feb, 2022"
+          amount="2, 280.00"
+          status="Sent"
+        />
 
-          <p className="issue-date">1 hr ago</p>
-          <p className="due-date">Wed, 11th Feb, 2022</p>
-          <p className="amount">$2, 280.00</p>
-          <p className="status">Sent</p>
-        </li>
+        <TransactionItem
+          name="Nadia Consulting PLC."
+          invoiceNo="Invoice No RCG - 332"
+          issueDate="1 hr ago"
+          dueDate="Wed, 11th Feb, 2022"
+          amount="2, 280.00"
+          status="Sent"
+        />
 
-        <li className="transaction">
-          <div className="client-name">
-            <h4 className="name shed-margin-padding">Nadia Consulting PLC.</h4>
-            <p className="invoice-number shed-margin-padding">Invoice No RCG - 332</p>
-          </div>
+        <TransactionItem
+          name="Nadia Consulting PLC."
+          invoiceNo="Invoice No RCG - 332"
+          issueDate="1 hr ago"
+          dueDate="Wed, 11th Feb, 2022"
+          amount="2, 280.00"
+          status="Sent"
+        />
 
-          <p className="issue-date">1 hr ago</p>
-          <p className="due-date">Wed, 11th Feb, 2022</p>
-          <p className="amount">$2, 280.00</p>
-          <p className="status">Sent</p>
-        </li>
+        <TransactionItem
+          name="Nadia Consulting PLC."
+          invoiceNo="Invoice No RCG - 332"
+          issueDate="1 hr ago"
+          dueDate="Wed, 11th Feb, 2022"
+          amount="2, 280.00"
+          status="Sent"
+        />
 
-        <li className="transaction">
-          <div className="client-name">
-            <h4 className="name shed-margin-padding">Nadia Consulting PLC.</h4>
-            <p className="invoice-number shed-margin-padding">Invoice No RCG - 332</p>
-          </div>
-
-          <p className="issue-date">1 hr ago</p>
-          <p className="due-date">Wed, 11th Feb, 2022</p>
-          <p className="amount">$2, 280.00</p>
-          <p className="status">Sent</p>
-        </li>
-
-        <li className="transaction">
-          <div className="client-name">
-            <h4 className="name shed-margin-padding">Nadia Consulting PLC.</h4>
-            <p className="invoice-number shed-margin-padding">Invoice No RCG - 332</p>
-          </div>
-
-          <p className="issue-date">1 hr ago</p>
-          <p className="due-date">Wed, 11th Feb, 2022</p>
-          <p className="amount">$2, 280.00</p>
-          <p className="status">Sent</p>
-        </li>
-
-        <li className="transaction">
-          <div className="client-name">
-            <h4 className="name shed-margin-padding">Nadia Consulting PLC.</h4>
-            <p className="invoice-number shed-margin-padding">Invoice No RCG - 332</p>
-          </div>
-
-          <p className="issue-date">1 hr ago</p>
-          <p className="due-date">Wed, 11th Feb, 2022</p>
-          <p className="amount">$2, 280.00</p>
-          <p className="status">Sent</p>
-        </li>
-
-        <li className="transaction">
-          <div className="client-name">
-            <h4 className="name shed-margin-padding">Nadia Consulting PLC.</h4>
-            <p className="invoice-number shed-margin-padding">Invoice No RCG - 332</p>
-          </div>
-
-          <p className="issue-date">1 hr ago</p>
-          <p className="due-date">Wed, 11th Feb, 2022</p>
-          <p className="amount">$2, 280.00</p>
-          <p className="status">Sent</p>
-        </li>
-
-        <li className="transaction">
-          <div className="client-name">
-            <h4 className="name shed-margin-padding">Nadia Consulting PLC.</h4>
-            <p className="invoice-number shed-margin-padding">Invoice No RCG - 332</p>
-          </div>
-
-          <p className="issue-date">1 hr ago</p>
-          <p className="due-date">Wed, 11th Feb, 2022</p>
-          <p className="amount">$2, 280.00</p>
-          <p className="status">Sent</p>
-        </li>
-
-        <li className="transaction">
-          <div className="client-name">
-            <h4 className="name shed-margin-padding">The last Consulting PLC.</h4>
-            <p className="invoice-number shed-margin-padding">Invoice No RCG - 332</p>
-          </div>
-
-          <p className="issue-date">1 hr ago</p>
-          <p className="due-date">Wed, 11th Feb, 2022</p>
-          <p className="amount">$2, 280.00</p>
-          <p className="status">Sent</p>
-        </li>
-
-        {/* <li className="transaction">
-          <div className="client-name">
-            <h4 className="name shed-margin-padding">The last Consulting PLC.</h4>
-            <p className="invoice-number shed-margin-padding">Invoice No RCG - 332</p>
-          </div>
-
-          <p className="issue-date">1 hr ago</p>
-          <p className="due-date">Wed, 11th Feb, 2022</p>
-          <p className="amount">$2, 280.00</p>
-          <p className="status">Sent</p>
-        </li> */}
+        <TransactionItem
+          name="Nadia Consulting PLC."
+          invoiceNo="Invoice No RCG - 332"
+          issueDate="1 hr ago"
+          dueDate="Wed, 11th Feb, 2022"
+          amount="2, 280.00"
+          status="Sent"
+        />
       </ul>
     </div>
   )

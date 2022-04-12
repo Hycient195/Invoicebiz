@@ -5,7 +5,6 @@ import  documentIcon  from '../../../assets/document-icon.svg';
 import  feedbackIcon  from '../../../assets/feedback-icon.svg';
 import  invoicesIcon  from '../../../assets/invoices-icon.svg';
 import  privacyIcon  from '../../../assets/privacy-icon.svg';
-// import    from '../../../assets .svg';
 import './LeftSection.css';
 
 export default function LeftSection(){

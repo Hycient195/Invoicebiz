@@ -1,9 +1,5 @@
 import './Dashboard.css';
-import { useState } from 'react';
-import NotifBellWithDot from '../../components/pieces/notif-bell-with-dot'
-// import SettingsIcon from '../../components/pieces/settings';
 import ProfilePic from '../../assets/profile-pic.png'
-
 import NotifBell from '../../assets/notif-bell-with-dot.svg';
 import SettingsIcon from '../../assets/settings.svg';
 import LeftSection from './left-aside/LeftSection';
@@ -15,6 +11,10 @@ export default function Dashboard(){
   
   return(
     <div className="dashboard-container">
+
+      {/*=================================*/}
+      {/* Beginning of Navigation section */}
+      {/*=================================*/}
       <nav className="dashboard-navbar">
         <h2 className="dashboard-title">Invoicebiz</h2>
         <div className="right">
@@ -23,12 +23,20 @@ export default function Dashboard(){
           <img src={ProfilePic} alt=""/>
         </div> 
       </nav>
-      {/*---------------- End Of Navigatin Section ---------------*/}
+      {/*  End Of Navigation Section */}
 
-      {/*=============== Begining Of Main Section =================*/}
+
+
+      {/*===========================*/}
+      {/* Beginning of Main section */}
+      {/*===========================*/}
       <main className="main-body">
         <LeftSection/>
         
+
+        {/*===========================*/}
+        {/* Beginning of Center section */}
+        {/*===========================*/}
         <div className="center-section">
           <h1 className="not-bold">Dashboard</h1>
         
@@ -36,11 +44,14 @@ export default function Dashboard(){
           <TransactionList/>
           
         </div>
+        {/* End of Center section */}
 
         <aside className="right-section">
           <RightAside/>
         </aside>
       </main>
+      {/* End of main section */}
+
     </div>
   )
 }

@@ -1,12 +1,8 @@
 aside.left-section{
-  /* width: 20%; */
   background-color: #341E9D;
   height: 95vh;
   overflow-y: scroll;
-  /* position: absolute; */
   left: 0;
-  /* min-width: 250px;
-  max-width: 300px; */
 }
 
 .left-section > .main-menu{
@@ -17,12 +13,10 @@ aside.left-section{
   border-top: 1px dashed white;
   position: relative;
   top: 4em !important;
-  /* left: 5%; */
   width: 100%;
   border-radius: none;
   top: 6%;
   z-index: 1;
-  /* margin-left: -2em; */
 }
 
 .main-menu > div > button{

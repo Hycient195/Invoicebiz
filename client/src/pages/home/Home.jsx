@@ -1,21 +1,18 @@
 import './Home.css';
-// import { Button } from '@material-ui/core';
-// import { ButtonUnstyled } from '@mui/core'
 import LaptopImg from '../../assets/laptop.png';
 import TabletImg from '../../assets/tablet.svg';
-import Testimonial_1 from '../../assets/testimonial-1.png';
-import Testimonial_2 from '../../assets/testimonial-2.png';
-import Testimonial_3 from '../../assets/testimonial-3.png';
-import Testimonial_4 from '../../assets/testimonial-4.png';
+import testimonials from '../../constants/testimonials';
+import TestimonialCard from '../../components/TestimonialCard/TestimonialCard';
 import SmartphoneImg from '../../assets/smartphone.svg';
-import AppStoreDownloadBtn from '../../components/pieces/app-store-download-btn';
-import PlayStoreDownloadBtn from '../../components/pieces/play-store-download-btn';
-
-// import Laptop from '../../components/pieces/laptop'
+import Pieces from '../../components/Pieces/index';
 
 export default function Home(){
   return(
     <main className="home-container">
+
+      {/*=================================*/}
+      {/* Begining of Hero header section */}
+      {/*=================================*/}
       <div className="hero-header">
         <div className="text-section">
           <h2>Your Business. Your Clients <br/> One Free, Powerful Invoicing Platform</h2>
@@ -28,102 +25,70 @@ export default function Home(){
           <button >Take a tour</button>
         </div>
         <div className="image-section">
-          {/* <LaptopImg/> */}
-          {/* <div className="laptop-img-container"> */}
-            <img className="laptop-img" src={LaptopImg} alt=""/>
-          {/* </div> */}
-          {/* <div className="tablet-img-container"> */}
-            {/* <img className="tablet-img" src={TabletImg} alt=""/> */}
-          {/* </div>  */}
+          <img className="laptop-img" src={LaptopImg} alt=""/>
         </div>
       </div>
+      {/* End of Hero header section */}
 
+
+      {/*=================================*/}
+      {/* Begining of Get-started section */}
+      {/*=================================*/}
       <section className="get-started">
         <p>Send your first invoice today - it's free!</p>
-        {/* <div className="get-started-container"> */}
           <input type="text" placeholder="Email address"/>
           <input type="text" placeholder="First name"/>
           <button>Get Started</button>
-        {/* </div> */}
       </section>
+      {/* End of Get-started section */}
 
 
-      {/*=========== Begining Of Testimonial Section ========== */}
+      {/*=================================*/}
+      {/* Begining of Testimonial section */}
+      {/*=================================*/}
       <section className="testimonials">
         <h4>FOCUS ON GROWING YOUR BUSINESS</h4>
         <p>We're here to help you get your finances out of the way - 
           invoicebiz is free <br/> simple and secure invoicing for small businesses.
         </p>
         <div className="testimonial-grid">
-          <div className="testimonial-card">
-            <div className="image-container">
-              <img src={Testimonial_1} alt=""/>
-            </div>
-            <div className="content">
-            Accept credit cards and many payment gateways from day one, and let clients pay right from your... read more.
-            
-            </div>
-            <div className="writer">
-            ... Cher Uka <br/> London.
-            </div>
-          </div>
-
-          <div className="testimonial-card">
-            <div className="image-container">
-              <img src={Testimonial_2} alt=""/>
-            </div>
-            <div className="content">
-              Consider switching to a cloud app like invoicely to manage & track all of your invoices from a Single Dashboard
-            </div>
-            <div className="writer">
-            ... Ian Bukky <br/> Alaska.
-            </div>
-          </div>
-
-          <div className="testimonial-card">
-            <div className="image-container">
-              <img src={Testimonial_3} alt=""/>
-            </div>
-            <div className="content">
-              Enjoy a fully-featured suite of customizable business reports and summaries so you always know ...  read more.
-            </div>
-            <div className="writer">
-            ... Cher Uka <br/> London.
-            </div>
-          </div>
-
-          <div className="testimonial-card">
-            <div className="image-container">
-              <img src={Testimonial_4} alt=""/>
-            </div>
-            <div className="content">
-              Track hourly billed tasks, expenses & trips with ease and convert them into elegant invoices or . ... read more.
-            </div>
-            <div className="writer">
-            ... Anh Bemj <br/> Paga Desing.
-            </div>
-          </div>
+          {
+            testimonials.map((testimonial, index) =>{
+              return(
+                <TestimonialCard
+                  key={index}
+                  image={testimonial.image}
+                  content={testimonial.content}
+                  writer={testimonial.writer}
+                  location={testimonial.location}
+                />
+              )
+            })
+          }
         </div>
       </section>
-      {/*-------------- End Of Testimonial Section --------------------*/}
+      {/* End Of Testimonial Section */}
 
-      {/*============== Begining Of Download Section ================= */}
+
+
+      {/*==============================*/}
+      {/* Begining of Download section */}
+      {/*==============================*/}
       <section className="download-section">
         <div className="download-grid">
-          {/* <div className="download-grid-item"> */}
-            <img className="smartphone-img" src={SmartphoneImg} alt=""/>
-          {/* </div> */}
-
+          <img className="smartphone-img" src={SmartphoneImg} alt=""/>
           <div className="download-grid-right-item">
             <h4>UNLIMITED, MOBILE INVOICING</h4>
             <p>Get Invoicely now on any IOS or Android device!</p>
             <div className="download-button-container">
-              <button><AppStoreDownloadBtn/></button>
-              <button><PlayStoreDownloadBtn/></button> 
+              <button><Pieces.Icons.App_store_download_btn/></button>
+              <button><Pieces.Icons.Play_store_download_btn/></button> 
             </div>
           </div>
         </div>
       </section>
+      {/* End of download section */}
+
     </main>
   )
 }

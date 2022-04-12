@@ -1,15 +1,17 @@
 .left-nav-container{
-  /* position: absolute;
-  left: 0; */
   height: 100vh;
   width: 350px;
   background-color:#341E9D;
   color: white;
   margin: 0px;
   display: inline-block;
-  /* margin: 0px; */
 }
 
+
+
+/*=========================*/
+/* Begining Of Top Section */
+/*=========================*/
 .top-section{
   background: url(../../../public/assets/wave.svg);
   background-size: cover;
@@ -22,13 +24,13 @@ div.middle-section{
   position: relative;
   top: 13%;
   text-align: center;
-  /* justify-items: center; */
 }
 
 
 
-/********** Begining Of Lower Section ***************/
-
+/*===========================*/
+/* Begining Of Lower Section */
+/*===========================*/
 .lower-section{
   position: relative;
   top: 20%;
@@ -56,12 +58,7 @@ div.middle-section{
   place-items: center;
 }
 
-.lower-section > ul > li::before{
-  /* content: "" */
-}
-
 .lower-section > ul > li > span{
-  /* margin: 14px 1.2em; */
   background-color: white;
   height: 22px;
   border-radius: 50%;
@@ -69,19 +66,12 @@ div.middle-section{
 }
 
 .lower-section > ul > li > p{
-  /* display: inline; */
-  /* position: relative; */
-  /* top: 10%; */
   margin: 0;
   margin-left: 2em;
 }
 
-/************* Last Section **************/
 div.keyboard-container{
-  position: relative;
-  top: 20%;
-  left: 0%;
-  /* height: 50px;
-  width: 100%; */
-  /* z-index: 5; */
+  position: absolute;
+  bottom: -10px;
+  left: 0;
 }

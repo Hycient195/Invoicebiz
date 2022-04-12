@@ -1,46 +1,27 @@
 footer.footer-container{
   width: 100%;
-  /* height: 5.1em; */
   background-color: #341E9D;
   padding: 0 2em;
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  place-items: flex-end;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
   align-items: center;
-  /* place-items: ; */
-  /* justify-items: flex-end; */
-  /* margin-bottom: 10px; */
-  /* position: relative;
-  bottom: 0%; */
-  /* margin: 0; */
   margin: 0px 0;
-  /* place-items: end; */
 }
 
-footer.footer-container > div > p{
+footer.footer-container > p{
   display: inline-block;
   width: 50%;
-  color: white;
+  color: rgba(255, 255, 255, 0.5);
   padding: 1em 0;
   margin: 0;
   width: max-content;
   margin : 0 2em;
 }
 
-/* .footer-container > div{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-} */
-
 footer.footer-container > ul{
-  display: inline-block;
-  /* position: relative;
-  right: -20%; */
-  /* align-self: start; */
-  width: fit-content;
   margin: 0;
   padding: 0;
-
 }
 
 footer.footer-container > ul > li{
@@ -54,40 +35,55 @@ footer.footer-container > ul > li:hover{
   background-color: #261679;
 }
 
-footer > div > p > a{
-  /* text-decoration: none !important; */
-  color: white !important;
-}
-footer.footer-container > ul > li > a{
-  /* text-decoration: none; */
-  color: rgba(255, 255, 255, 0.5);;
+footer > p > a{
+  color: rgba(255, 255, 255, 0.5) !important;
 }
 
-@media (max-width: 500px){
+footer.footer-container > ul > li > a{
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+}
+
+
+
+
+/*=======================================*/
+/* Media Query For Large Tablets Devices */
+/*=======================================*/
+@media (max-width: 1050px){
   footer.footer-container{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     padding: 0.5em 1em;
+    flex-direction: column;
   }
 
   footer.footer-container > p{
     width: 100%;
     text-align: center;
+    font-size: 0.8em;
   }
 
   footer.footer-container > ul{
     width: 100%;
     display: flex;
     justify-content: space-between !important;
-    /* flex: wrap; */
-    /* justify-items: flex-end; */
-    font-size: 0.8em;
     margin: 0 1em !important;
     margin: 0 auto !important;
-    /* background-color: red !important; */
   }
 
   footer.footer-container > ul > li{
     text-align: center;
+    width: 100%;
+  }
+}
+
+
+/*================================*/
+/* Media Query For Mobile Devices */
+/*================================*/
+@media screen and (max-width: 700px){
+  footer.footer-container > ul{
+    font-size: 0.8em;
   }
 }
